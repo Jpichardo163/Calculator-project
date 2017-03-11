@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="arnold-calc.css">
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+<form id="calc">
+<div id="theworld">
+<input name="input" id="bar">
+<div id="row5">
+  <input type="button" value="C" id="clears" onclick="document.getElementById('clear').play(); calc.input.value =' ' "/>
+  <input type="button" value="avg" id="averages" onclick="document.getElementById('average').play(); apple()"/>
+  <input type="button" value="÷"onclick="document.getElementById('divide').play();calc.input.value += ' / '"/>
+</div>
+<div id="row 4">
+  <input type="button" value="7" onclick="document.getElementById('seven').play(); calc.input.value += '7'";/>
+  <input type="button" value="8" onclick="document.getElementById('eight').play(); calc.input.value += '8'"/>
+  <input type="button" value="9" onclick="document.getElementById('nine').play(); calc.input.value += '9'"/>
+  <input type="button" value="x" onclick="document.getElementById('multiply').play();calc.input.value += ' * '"/>
+</div>
+<div id="row3">
+  <input type="button" value="4" onclick="document.getElementById('four').play();calc.input.value += '4'"/>
+  <input type="button" value="5" onclick="document.getElementById('five').play();calc.input.value += '5'"/>
+  <input type="button" value="6" onclick="document.getElementById('six').play();calc.input.value += '6'"/>
+  <input type="button" value="-" onclick="document.getElementById('subtract').play(); calc.input.value +=' - '"/>
+</div>
+<div id="row2">
+  <input type="button" value="1" onclick="document.getElementById('one').play();calc.input.value += '1'"/>
+  <input type="button" value="2" onclick="document.getElementById('two').play();calc.input.value += '2'">
+  <input type="button" value="3" onclick="document.getElementById('three').play();calc.input.value += '3'"/>
+  <input type="button" value="+" onclick="document.getElementById('add').play();calc.input.value += ' + '"/>
+</div>
+<div id="row1">
+  <input type="button" value="0" id="zero" onclick="document.getElementById('zero').play();calc.input.value += '0'">
+  <input type="button" value="."  onclick="document.getElementById('period').play();calc.input.value += '.'"/>
+  <input type="button" value="=" onclick="document.getElementById('equals').play();calc.input.value=eval(calc.input.value)"/>
+</div>
+</div>
+<audio id="clear" src="sound/clear.mp3"></audio>
+<audio id="average" src="sound/avg.mp3"></audio>
+<audio id="divide" src="sound/divide.mp3"></audio>
+<audio id="seven" src="sound/seven.mp3"></audio>
+<audio id="eight" src="sound/eight.mp3"></audio>
+<audio id="nine" src="sound/nine.mp3"></audio>
+<audio id="multiply" src="sound/multiply.mp3"></audio>
+<audio id="four" src="sound/four.mp3"></audio>
+<audio id="five" src="sound/five.mp3"></audio>
+<audio id="six" src="sound/six.mp3"></audio>
+<audio id="subtract" src="sound/subtract.mp3"></audio>
+<audio id="one" src="sound/one.mp3"></audio>
+<audio id="two" src="sound/two.mp3"></audio>
+<audio id="three" src="sound/three.mp3"></audio>
+<audio id="add" src="sound/add.mp3"></audio>
+<audio id="zero" src="sound/zero.mp3"></audio>
+<audio id="period" src="sound/period.mp3"></audio>
+<audio id="equals" src="sound/equals.mp3"></audio>
+</form>
+<script type="text/javascript">
+  var a;
+  function orange(){
+    var a = 5;
+  }
+  function apple(){
+    orange();
+    document.getElementById("bar").innerHTML=a;
+  }
+
+</script>
+</body>
+</html>

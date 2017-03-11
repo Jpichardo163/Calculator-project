@@ -1,0 +1,45 @@
+
+#clears, #averages{
+	width: 117px;
+}
+#zero{
+	width:163px;
+}
+body{
+	background: url("images/count.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#theworld{
+	background: purple;
+	border: solid;
+	width: 347px;
+	height: 390px;
+	font-size: 50px;
+	position: relative;
+	left: 1030px;
+	top: 0px;
+	border-radius: 5%;
+}
+#bar{
+	background: rgba(203,204,206,0.3);
+	height: 40px;
+	width: 335px;
+	border-radius: 10%;
+}
+input{
+	background: gray;
+	border:solid;
+	font-family: 'Arvo', serif;	
+	border-radius: 15%;
+	text-align: center;
+	height: 50px;
+	width: 75px;
+	position: relative;
+	left: 3px;
+	font-size: 25px;
+}
+input:hover{
+	background-color: white;
+}
+
